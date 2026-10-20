@@ -1,0 +1,163 @@
+{
+    "metrics": {
+        "http_reqs": {
+            "count": 300,
+            "rate": 4.955210807518265
+        },
+        "http_req_tls_handshaking": {
+            "p(95)": 0,
+            "avg": 2.0504653333333334,
+            "min": 0,
+            "med": 0,
+            "max": 151.9306,
+            "p(90)": 0
+        },
+        "checks": {
+            "fails": 0,
+            "passes": 900,
+            "value": 1
+        },
+        "http_req_duration": {
+            "med": 69.75965,
+            "max": 250.1977,
+            "p(90)": 84.339,
+            "p(95)": 107.61564000000011,
+            "avg": 73.75542399999999,
+            "min": 47.831,
+            "thresholds": {
+                "p(95)<2000": false
+            }
+        },
+        "http_req_waiting": {
+            "med": 51.12765,
+            "max": 133.2347,
+            "p(90)": 60.463480000000004,
+            "p(95)": 65.56314,
+            "avg": 52.11260866666667,
+            "min": 38.806
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 300,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "iteration_duration": {
+            "avg": 1118.6405350000011,
+            "min": 1069.475,
+            "med": 1109.16365,
+            "max": 1449.4751,
+            "p(90)": 1144.84624,
+            "p(95)": 1194.1437250000001
+        },
+        "http_req_blocked": {
+            "avg": 3.490725666666667,
+            "min": 0,
+            "med": 0,
+            "max": 244.4023,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "solicitudes_fallidas": {
+            "passes": 0,
+            "fails": 300,
+            "thresholds": {
+                "rate<0.05": false
+            },
+            "value": 0
+        },
+        "http_req_duration{expected_response:true}": {
+            "p(90)": 84.339,
+            "p(95)": 107.61564000000011,
+            "avg": 73.75542399999999,
+            "min": 47.831,
+            "med": 69.75965,
+            "max": 250.1977
+        },
+        "http_req_sending": {
+            "p(95)": 0.6957400000000002,
+            "avg": 0.33120566666666673,
+            "min": 0,
+            "med": 0.2507,
+            "max": 10.0111,
+            "p(90)": 0.5954100000000007
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "vus": {
+            "min": 1,
+            "max": 10,
+            "value": 1
+        },
+        "data_received": {
+            "count": 92381480,
+            "rate": 1525899.027035108
+        },
+        "http_req_receiving": {
+            "med": 17.0497,
+            "max": 196.025,
+            "p(90)": 27.056160000000006,
+            "p(95)": 45.312760000000026,
+            "avg": 21.31160966666666,
+            "min": 0.5063
+        },
+        "http_req_connecting": {
+            "avg": 1.268402,
+            "min": 0,
+            "med": 0,
+            "max": 42.1185,
+            "p(90)": 0,
+            "p(95)": 0
+        },
+        "tiempo_respuesta_pokemon": {
+            "avg": 73.75542399999999,
+            "min": 47.831,
+            "med": 69.75965,
+            "max": 250.1977,
+            "p(90)": 84.339,
+            "p(95)": 107.61564000000011
+        },
+        "data_sent": {
+            "count": 284094,
+            "rate": 4692.485530503646
+        },
+        "iterations": {
+            "count": 300,
+            "rate": 4.955210807518265
+        }
+    },
+    "root_group": {
+        "name": "",
+        "path": "",
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {},
+        "checks": {
+                "Estado HTTP es 200": {
+                    "path": "::Estado HTTP es 200",
+                    "id": "5cc8be6d830d246b875d6b03806d1b66",
+                    "passes": 300,
+                    "fails": 0,
+                    "name": "Estado HTTP es 200"
+                },
+                "La respuesta contiene nombre": {
+                    "path": "::La respuesta contiene nombre",
+                    "id": "6e3d2ee4c91371709386ea2959c2b05c",
+                    "passes": 300,
+                    "fails": 0,
+                    "name": "La respuesta contiene nombre"
+                },
+                "Tiempo de respuesta menor a 2 segundos": {
+                    "name": "Tiempo de respuesta menor a 2 segundos",
+                    "path": "::Tiempo de respuesta menor a 2 segundos",
+                    "id": "1643c90bddf621ae124be8e1cfc97b55",
+                    "passes": 300,
+                    "fails": 0
+                }
+            }
+    }
+}
